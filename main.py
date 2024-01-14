@@ -41,6 +41,10 @@ from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(openai_api_key=api_key)
 
+ad_body, skills_lst = [], []
+
+llm_input = [ad_body, skills_lst]
+
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are world class technical documentation writer."),
     ("user", "{input}")

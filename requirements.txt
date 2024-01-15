@@ -2,3 +2,5 @@ langchain
 numpy
 pandas
 python-dotenv
+langchain-openai
+langchain-community
